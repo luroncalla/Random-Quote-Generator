@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fbf98b;
+    color: #42494d;
+}
+
+.wrapper {
+    width: 37rem;
+    background-color: #edede2;
+    border-radius: 15px;
+    padding: 2.5em 2.5em 2em;
+    border: .2em solid #42494d;
+}
+
+.wrapper header {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper .content {
+    margin: 2em 0;
+}
+
+.content .quote-area {
+    display: flex;
+    justify-content: center;
+}
+
+
+.quote-area i {
+    font-size: .9em;
+}
+
+.quote-area i:first-child {
+    margin: .2em .5em 0 0;
+}
+
+.quote-area i:last-child {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 .2em .5em;
+}
+
+.quote-area .quote {
+    font-size: 1.3em;
+    display: inline-block;
+    text-align: center;
+    word-break: break-word;
+    padding: .2em .3em;
+    background-color: #fef243;
+}
+
+.content .author {
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+    font-size: 1.1em;
+    margin-top: 1.2em;
+}
+
+.author span:first-child {
+    margin: -.5em .4em 0 0;
+    font-family: monospace;
+}
+
+.wrapper .buttons {
+    border-top: 1px solid #ccc;
+}
+
+.buttons .features {
+    display: flex;
+    align-items: center;
+    margin-top: 1.4em;
+    justify-content: space-between;
+}
+
+.features ul {
+    display: flex;
+}
+
+.features ul li {
+    list-style: none;
+    margin: 0 .3em;
+    height: 3em;
+    width: 3em;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: .13em solid #3e454d;
+    transition: all 0.3s ease;
+}
+
+.features ul li:hover {
+    color: #3e454d;
+    background-color: #fef243;
+}
+
+.features button {
+    border: none;
+    outline: none;
+    padding: .9em 1.6em;
+    border-radius: 2em;
+    background: #fef243;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+
+@media screen and (max-width: 660px) {
+    .wrapper {
+        width: 80%;
+        padding: 2em 1.5em 1.5em;
+    }
+
+    .wrapper header {
+        font-size: 1.2em;
+    }
+
+    .quote-area i {
+        font-size: .6em;
+    }
+
+    .quote-area .quote {
+        font-size: .9em;
+    }
+
+    .content .author {
+        font-size: .7em;
+    }
+
+    .buttons .features {
+        margin-top: 1.3em;
+        flex-wrap: wrap;
+
+    }
+
+    .features ul li {
+        font-size: .7em;
+        margin-bottom: 1em;
+    }
+
+    .features button {
+        padding: .9em 1em;
+        font-size: .8em;
+        font-weight: normal;
+    }
+}
